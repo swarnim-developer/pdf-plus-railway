@@ -6,6 +6,7 @@ const hb = require('handlebars');
 const readFile = utils.promisify(fs.readFile);
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 8080;
 
 app.get('/',function(req,res){
     res.send("invoice-pdf-generator by Alledo Technologies Ai");
@@ -124,6 +125,6 @@ app.get("/invoice/print", (req, res) => {
     `);
 });
 
-app.listen(8080, () => {
-    console.log("pdf-plus-railway running on PORT 8080");
+app.listen(PORT, () => {
+    console.log("pdf-plus-railway running on PORT" + PORT);
 });

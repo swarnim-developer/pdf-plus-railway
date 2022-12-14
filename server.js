@@ -52,7 +52,8 @@ app.get('/invoice', async function (req, res, next) {
 
         const browser = await puppeteer.launch({
             headless: true,
-            args: ['--no-sandbox','--disable-setuid-sandbox']
+            args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            ignoreDefaultArgs: ['--disable-extensions']
         });
 
         const page = await browser.newPage();

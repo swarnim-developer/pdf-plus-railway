@@ -1,0 +1,21 @@
+{
+  "name": "pdf-plus-railway",
+  "version": "1.0.0",
+  "description": "PDF Generator API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "pdf-plus",
+    "html-to-pdf",
+    "pdf-generator"
+  ],
+  "author": "devmridul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "handlebars": "^4.7.6",
+    "puppeteer": "^19.4.0"
+  }
+}
